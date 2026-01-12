@@ -1,0 +1,30 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.build/
+
+# Virtual environment
+venv/
+
+# Environments
+.env
+.env.*
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+student-predictor/node_modules/
+
+# Logs
+*.log
+
+# System
+.DS_Store
+Thumbs.db

@@ -1,0 +1,25 @@
+{
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "student-predictor/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "student-predictor/build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "app.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "student-predictor/$1"
+    }
+  ]
+}
